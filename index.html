@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Marketing</title>
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      crossorigin="anonymous"
+    /> -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="footer.css" />
+    <link rel="stylesheet" href="nav-style.css" />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-red navbar-dark">
+      <div class="wrapper"></div>
+      <div class="container-fluid all-show">
+        <a class="navbar-brand" href="#"
+          >Penton <i class="fa fa-codepen"></i
+        ></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >About us</a
+              >
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">Products</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Events</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">contact</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fa fa-search"></i></a>
+            </li>
+          </ul>
+          <div class="d-flex flex-column sim">
+            <span><b class="nbr-item">0</b> item added to your quote</span>
+            <small class="text-primary"
+              >Total price <b id="total">0</b> dt</small
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <!-- carousel -->
+      <section id="carousel">
+        <div
+          id="carouselExampleIndicators"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="pexels-lucie-liz-3165335.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="pexels-trang-doan-1092730.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="pexels-lumn-322207.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+
+      <section id="products">
+        <div class="card">
+          <img src="products/pexels-web-donut-19090.jpg" alt="" />
+          <div class="content">
+            <span><b class="prix">120</b> dt</span>
+            <div class="icons-box">
+              <i class="far fa-trash-alt"></i><i class="fas fa-heart"></i>
+            </div>
+          </div>
+
+          <div class="button">
+            <button class="addition">+</button
+            ><button class="subtract">-</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="products/pexels-dom-j-45055.jpg" alt="" />
+          <div class="content">
+            <span><b class="prix">100</b> dt</span>
+            <div class="icons-box">
+              <i class="far fa-trash-alt"></i><i class="fas fa-heart"></i>
+            </div>
+          </div>
+          <div class="button">
+            <button class="addition">+</button
+            ><button class="subtract">-</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="products/pexels-anj-namoro-2850487.jpg" alt="" />
+          <div class="content">
+            <span><b class="prix">200</b> dt</span>
+            <div class="icons-box">
+              <i class="far fa-trash-alt"></i><i class="fas fa-heart"></i>
+            </div>
+          </div>
+          <div class="button">
+            <button class="addition">+</button
+            ><button class="subtract">-</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="products/pexels-anna-nekrashevich-8532616.jpg" alt="" />
+          <div class="content">
+            <span><b class="prix">150</b> dt</span>
+            <div class="icons-box">
+              <i class="far fa-trash-alt"></i><i class="fas fa-heart"></i>
+            </div>
+          </div>
+
+          <div class="button">
+            <button class="addition">+</button
+            ><button class="subtract">-</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="products/pexels-abhishek-saini-2929411.jpg" alt="" />
+          <div class="content">
+            <span><b class="prix">600</b> dt</span>
+            <div class="icons-box">
+              <i class="far fa-trash-alt"></i><i class="fas fa-heart"></i>
+            </div>
+          </div>
+          <div class="button">
+            <button class="addition">+</button
+            ><button class="subtract">-</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="products/pexels-pixabay-51383.jpg" alt="" />
+          <div class="content">
+            <span><b class="prix">520</b> dt</span>
+            <div class="icons-box">
+              <i class="far fa-trash-alt"></i><i class="fas fa-heart"></i>
+            </div>
+          </div>
+          <div class="button">
+            <button class="addition">+</button
+            ><button class="subtract">-</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="products/pexels-stas-knop-1298601.jpg" alt="" />
+          <div class="content">
+            <span><b class="prix">90</b> dt</span>
+            <div class="icons-box">
+              <i class="far fa-trash-alt"></i><i class="fas fa-heart"></i>
+            </div>
+          </div>
+
+          <div class="button">
+            <button class="addition">+</button
+            ><button class="subtract">-</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="products/pexels-stas-knop-1579240.jpg" alt="" />
+          <div class="content">
+            <span><b class="prix">80</b> dt</span>
+            <div class="icons-box">
+              <i class="far fa-trash-alt"></i><i class="fas fa-heart"></i>
+            </div>
+          </div>
+          <div class="button">
+            <button class="addition">+</button
+            ><button class="subtract">-</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="products/pexels-julie-aagaard-2097090.jpg" alt="" />
+          <div class="content">
+            <span><b class="prix">60</b> dt</span>
+            <div class="icons-box">
+              <i class="far fa-trash-alt"></i><i class="fas fa-heart"></i>
+            </div>
+          </div>
+          <div class="button">
+            <button class="addition">+</button
+            ><button class="subtract">-</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="products/pexels-lisa-1279330.jpg" alt="" />
+          <div class="content">
+            <span><b class="prix">50</b> dt</span>
+            <div class="icons-box">
+              <i class="far fa-trash-alt"></i><i class="fas fa-heart"></i>
+            </div>
+          </div>
+          <div class="button">
+            <button class="addition">+</button
+            ><button class="subtract">-</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="products/pexels-daria-shevtsova-704569.jpg" alt="" />
+          <div class="content">
+            <span><b class="prix">45</b> dt</span>
+            <div class="icons-box">
+              <i class="far fa-trash-alt"></i><i class="fas fa-heart"></i>
+            </div>
+          </div>
+          <div class="button">
+            <button class="addition">+</button
+            ><button class="subtract">-</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="products/pexels-pixabay-315755.jpg" alt="" />
+          <div class="content">
+            <span><b class="prix">30</b> dt</span>
+            <div class="icons-box">
+              <i class="far fa-trash-alt"></i><i class="fas fa-heart"></i>
+            </div>
+          </div>
+          <div class="button">
+            <button class="addition">+</button
+            ><button class="subtract">-</button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div id="container">
+        <div id="part1">
+          <div id="companyinfo">
+            <a id="sitelink" href="#">E-Marketing</a>
+            <p id="title">Cool and Perfect Snippet code</p>
+            <p id="detail">
+              We create awesome code snippets that will help you in creating
+              your own beautiful site.
+            </p>
+          </div>
+          <div id="explore">
+            <p id="txt1">Explore</p>
+            <a class="link" href="#">Home</a>
+            <a class="link" href="#">About</a>
+            <a class="link" href="#">Snippet</a>
+            <a class="link" href="#">Careers</a>
+          </div>
+          <div id="visit">
+            <p id="txt2">Visit</p>
+            <p class="text">Lincoln House</p>
+            <p class="text">78 Bhulabhai Desai Road</p>
+            <p class="text">Mumbai 400 026</p>
+            <p class="text">Phone: (22) 2363-3611</p>
+            <p class="text">Fax: (22) 2363-0350</p>
+          </div>
+          <div id="legal">
+            <p id="txt3">Legal</p>
+            <a class="link1" href="#">Terms and Conditions</a>
+            <a class="link1" href="#">Private Policy</a>
+          </div>
+          <div id="subscribe">
+            <p id="txt4">Subscribe to US</p>
+            <form><input id="email" type="email" placeholder="Email" /></form>
+            <a class="waves-effect waves-light btn">Subscribe</a>
+            <p id="txt5">Connect With US</p>
+            <i class="fab fa-facebook-square social fa-2x"></i>
+            <i class="fab fa-linkedin social fa-2x"></i>
+            <i class="fab fa-twitter-square social fa-2x"></i>
+          </div>
+        </div>
+        <div id="part2">
+          <p id="txt6">
+            <i class="material-icons tiny"> copyright</i>copyright 2019
+            BBbootstrap - All right reserved
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- ---------------------------------------------------------------- -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="app.js"></script>
+  </body>
+</html>
